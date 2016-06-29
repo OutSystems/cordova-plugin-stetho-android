@@ -34,6 +34,7 @@ The Stetho is initialized when the Cordova is initialized, so the only requirmen
     - João Gonçalves, <joao.goncalves@outsystems.com>
     - Rúben Gonçalves, <ruben.goncalves@outsystems.com>
     - Vitor Oliveira, <vitor.oliveira@outsystems.com>
+
 ---
 
 LICENSE
