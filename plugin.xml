@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="com.outsystems.mobile.stetho"
+      version="0.0.1">
+    <name>Stetho Plugin</name>
+    <description>Plugin to integrate with Stetho a debug bridge for Android applications</description>
+    <license>MIT License</license>
+    <keywords>cordova, stetho, debug bridge, android</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="www/Stetho.js" name="Stetho">
+        <clobbers target="navigator.device.stetho" />
+    </js-module>
+
+    <!-- Android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="StethoPlugin">
+                <param name="android-package" value="com.outsystems.mobile.stetho.StethoPlugin"/>
+                 <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/StethoPlugin.java" target-dir="src/com/outsystems/mobile/stetho" />
+        
+        <framework src="src/android/stetho.gradle" custom="true" type="gradleReference" />
+    </platform>
+    
+</plugin>
