@@ -13,8 +13,6 @@ import org.apache.cordova.CordovaWebView;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import okhttp3.OkHttpClient;
-
 /**
  * Created by vitoroliveira on 23/06/16.
  */
@@ -29,9 +27,9 @@ public class StethoPlugin extends CordovaPlugin {
         Stetho.initializeWithDefaults(cordova.getActivity().getApplication());
 
         //Enable Network Inspection
-        new OkHttpClient.Builder()
+      /*  new OkHttpClient.Builder()
                 .addNetworkInterceptor(new StethoInterceptor())
-                .build();
+                .build(); */
 	}
 
     @Override
