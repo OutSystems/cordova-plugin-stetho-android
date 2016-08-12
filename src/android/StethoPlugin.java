@@ -3,7 +3,6 @@ package com.outsystems.mobile.stetho;
 import com.facebook.stetho.InspectorModulesProvider;
 import com.facebook.stetho.Stetho;
 import com.facebook.stetho.inspector.protocol.ChromeDevtoolsDomain;
-import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.facebook.stetho.rhino.JsRuntimeReplFactoryBuilder;
 
 import org.apache.cordova.CallbackContext;
