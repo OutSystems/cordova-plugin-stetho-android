@@ -7,7 +7,7 @@
     <description>Plugin to integrate with Stetho a debug bridge for Android applications</description>
     <license>MIT License</license>
     <keywords>cordova, stetho, debug bridge, android</keywords>
-    <repo></repo>
+    <repo>https://github.com/HaidarZ/cordova-plugin-stetho-android.git</repo>
     <issue></issue>
 
     <js-module src="www/Stetho.js" name="Stetho">
