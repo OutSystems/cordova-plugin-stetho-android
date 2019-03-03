@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Plugin to integrate with Stetho a debug bridge for Android applications",
   "cordova": {
-    "id": "com.outsystems.mobile.stetho",
+    "id": "cordova-plugin-stetho-android",
     "platforms": [
       "android"
     ]
